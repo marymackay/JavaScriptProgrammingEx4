@@ -1,7 +1,10 @@
-let myPhoneNumber = '(506)855-5455';
-//alert(myPhoneNumber);
+/*
+NAME: Mary MacKay
+PURPOSE: Assignment #2
+*/
+let firstName = prompt("Please enter first name.");
+let lastName = prompt("Please enter last name.");
 
-let outputInfo = new Date().toString();
-outputInfo = new Date(2020, 5, 22);
+let msg = `Hello ${firstName} ${lastName} I have several prompts for you to collect some data. Please be patient and complete them all.` ; 
+alert(msg);
 
-//alert(outputInfo);

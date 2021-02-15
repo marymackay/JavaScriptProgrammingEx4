@@ -1,16 +1,120 @@
+<!--NAME: Mary MacKay
+PURPOSE: Assignment #2-->
+
+
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="app.js"></script>
+
+<head>
+    <script src="app.js"></script>
+    <script>
+        let squareLength = prompt("Provide a length in pixels for a square:");
+        let rectangleLength = prompt("Provide a length in pixels for a rectangle:");
+        let rectangleWidth = prompt("Please provide a width in pixels for a rectangle:");
+        let triangleBase = prompt("Provide a base in pixels for a triangle:");
+        let triangleHeight = prompt("Please provide a height in pixels for a triangle:")
+
+        let currentDate = new Date();
+        let perimeterSquare = squareLength * 4;
+        let areaSquare = squareLength * squareLength;
+        let perimeterRectangle = (rectangleWidth * 2) + (rectangleLength * 2);
+        let areaRectangle = rectangleLength * rectangleLength;
+        let areaTriangle = (triangleBase * triangleHeight) * 0.5;
+    </script>
+</head>
+
+<body>
+    <h1>Polygon Shapes and their Properties -
         <script>
-        let myName= prompt("Please provide your name","Enter Your Name Here!")
-        let timeNow = new Date();
-        alert(`${myName} - the time is ${timeNow.toDateString()}`);
-        window.location = 'myOtherPage.html';
+            document.write(currentDate);
         </script>
-    </head>
-    <body>
-        <h1>A Wb Page for the ages!</h1>
-        <p>A web page with some fabulous embedded JavaScript!</p>
-    </body>
+    </h1>
+    <h2>Squre</h2>
+    <p>
+        <script>
+            document.write(`Your square has a length of ${squareLength} pixels.`);
+        </script>
+    </p>
+    <p>
+        <script>
+            document.write(`Your square has a perimter of ${perimeterSquare} pixels.`);
+        </script>
+    </p>
+    <p>
+        <script>
+            document.write(`Your square has an area of ${areaSquare} pixels².`);
+        </script>
+    </p>
+  
+    <!--<svg width="400" height="400" id="square">
+        <rect width="300" height="300" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+        <script>
+            function adjustSize() {
+                let square = document.getElementById('square');
+                square.setAttribute("currentScale", 1.5);
+            }
+            adjustSize();
+        </script>
+    </svg>-->
+
+
+    <h2>Rectangle</h2>
+    <p>
+        <script>
+            document.write(`Your square has a length of ${rectangleLength} pixels.`);
+        </script>
+    </p>
+    <p>
+        <script>
+            document.write(`Your square has a width of ${rectangleWidth} pixels.`);
+        </script>
+    </p>
+    <p>
+        <script>
+            document.write(`Your square has an perimeter of ${perimeterRectangle} pixels.`);
+        </script>
+    </p>
+    <p>
+        <script>
+            document.write(`Your square has an area of ${area} pixels².`);
+        </script>
+    </p>
+   
+    <!--<svg width="300" height="100" id="rectangle">
+        <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+      </svg>
+    <script>
+        function adjustSize1() {
+            let rectangle = document.getElementById('rectangle');
+            rectangle.setAttribute("currentScale", 1.5);
+        }
+        adjustSize1();
+    </script>-->
+
+    <h2>Triangle</h2>
+    <p>
+        <script>
+            document.write(`Your square has a base of ${triangleBase} pixels.`);
+        </script>
+    </p>
+    <p>
+        <script>
+            document.write(`Your square has a height of ${triangleHeight} pixels.`);
+        </script>
+    </p>
+    <p>
+        <script>
+            document.write(`Your square has an area of ${areaTriangle} pixels².`);
+        </script>
+    </p>
+    <!--<svg id="triangle" height="210" width="500">
+        <polygon points="200,10 250,190 160,210" style="fill:lime;stroke:purple;stroke-width:1" />
+      </svg>-->
+
+
+
+
+</body>
+
 </html>
